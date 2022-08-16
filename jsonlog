@@ -103,5 +103,5 @@ for line in sys.stdin:
         print("[{}] {} [{}] {}".format(colorize_timestamp(timestamp), colorize_level(level), logger_name, colorize_message(message)))
     except:
         print(line)
-print("---")
+print("-~-")
 
