@@ -101,7 +101,7 @@ for line in sys.stdin:
         level = data['level']
         message = data['message']
         print("[{}] {} [{}] {}".format(colorize_timestamp(timestamp), colorize_level(level), logger_name, colorize_message(message)))
-        if data['stackTrace']:
+        if 'stackTrace' in data:
             print(data['stackTrace'])
     except:
         print(line)
