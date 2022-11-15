@@ -103,6 +103,9 @@ for line in sys.stdin:
         print("[{}] {} [{}] {}".format(colorize_timestamp(timestamp), colorize_level(level), logger_name, colorize_message(message)))
         if 'stackTrace' in data:
             print(data['stackTrace'])
+        # for repour
+        if 'exc_info' in data:
+            print(data['exc_info'])
     except:
         print(line)
 print("-~-")
